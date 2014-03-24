@@ -16,26 +16,27 @@ package org.bwgz.gracenote.web.api.model;
 import com.google.api.client.util.Key;
 import com.google.api.client.xml.GenericXml;
 
-public class TVGrid extends GenericXml {
-	@Key("TVPROGRAM")
-	private TVProgram[] tvProgram;
+public class Contribution extends GenericXml {
+	@Key("CHARACTER")
+	private String character;
 
-	@Key("TVAIRING")
-	private TVAiring[] tvAiring;
+	@Key("CONTRIBUTION_TYPE")
+	private String contributionType;
 
-	public TVProgram[] getTvProgram() {
-		return tvProgram;
+	public String getCharacter() {
+		return character;
 	}
 
-	public void setTvProgram(TVProgram[] tvProgram) {
-		this.tvProgram = tvProgram;
+	public void setCharacter(String character) {
+		this.character = character;
 	}
 
-	public TVAiring[] getTvAiring() {
-		return tvAiring;
+	public String getContributionType() {
+		return contributionType;
 	}
 
-	public void setTvAiring(TVAiring[] tvAiring) {
-		this.tvAiring = tvAiring;
+	public void setContributionType(String contributionType) {
+		this.contributionType = contributionType;
 	}
+
 }	

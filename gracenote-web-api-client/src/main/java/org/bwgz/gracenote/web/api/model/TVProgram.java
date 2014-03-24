@@ -32,6 +32,12 @@ public class TVProgram extends GenericXml {
 	@Key("URL")
 	private String url;
 
+	@Key("CONTRIBUTOR")
+	private Contributor[] contributor;
+
+	@Key("IPGCATEGORY")
+	private IPGCategory ipgCategory;
+
 	public String getGnId() {
 		return gnId;
 	}
@@ -70,5 +76,21 @@ public class TVProgram extends GenericXml {
 
 	public void setUrl(String url) {
 		this.url = url;
+	}
+
+	public Contributor[] getContributor() {
+		return contributor;
+	}
+
+	public void setContributor(Contributor[] contributor) {
+		this.contributor = contributor;
+	}
+
+	public IPGCategory getIpgCategory() {
+		return ipgCategory;
+	}
+
+	public void setIpgCategory(IPGCategory ipgCategory) {
+		this.ipgCategory = ipgCategory;
 	}
 }	

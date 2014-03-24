@@ -20,13 +20,14 @@ import org.bwgz.gracenote.web.api.model.TVGrid;
 import org.bwgz.gracenote.web.api.model.TVProgram;
 import org.bwgz.gracenote.web.api.model.TVProvider;
 
-import com.google.api.client.http.HttpTransport;
 import com.google.api.client.http.javanet.NetHttpTransport;
 
 public class GracenoteTest {
 	  public static void main(String[] args) {
-		    HttpTransport httpTransport = new NetHttpTransport();
-		    Gracenote.Builder builder = new Gracenote.Builder(httpTransport,"client-id","client-tag");
+			/*
+			 * Put your Gracenote client and tag id's here.
+			 */
+		    Gracenote.Builder builder = new Gracenote.Builder(new NetHttpTransport(), "client-id", "client-tag");
 		    Gracenote gracenote = builder.build();
 		    try {
 		    	gracenote.register();

@@ -183,7 +183,6 @@ public class Gracenote extends GracenoteClient {
 		
 		Authenticate authenticate = new Authenticate(getClientId(), getClientTag(), this.getUserId());
 		
-		
 		Query query = new Query(Query.CMD_TVPROGRAM_FETCH);
 		query.setGnId(gnId);
 		

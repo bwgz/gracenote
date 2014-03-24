@@ -12,17 +12,4 @@
 	
 	<artifactId>gracenote-web-api-client</artifactId>
 	<packaging>jar</packaging>
-	
-	<properties>
-		<google-http-client-jackson2-version>1.14.1-beta</google-http-client-jackson2-version>
-	</properties>
-
-	<dependencies>
-	    <dependency>
-			<groupId>com.google.http-client</groupId>
-			<artifactId>google-http-client-jackson2</artifactId>
-			<version>${google-http-client-jackson2-version}</version>
-			<scope>test</scope>
-	    </dependency>
-	</dependencies>
 </project>
